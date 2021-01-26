@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+    --clean \
+    --mode debian \
+    --distribution "star" \
+    --apt-recommends false \
+    --debian-installer live \
+    --parent-distribution "buster" \
+    --debian-installer-distribution "buster" \
+    --archive-areas "main contrib non-free" \
+    --iso-application "Star Linux" \
+    --iso-publisher "Star" \
+    --iso-volume "Star OS" \
+    --iso-preparer "Star" \
+    --memtest none \
+    --linux-packages "linux-image linux-headers" \
+    --bootappend-live "boot=live hostname=star quiet splash components timezone=Asia/Kolkata user-fullname=Star" \
+    --source false \
+    --updates false \
+    --security false \
+    --backports false \
+	"${@}"

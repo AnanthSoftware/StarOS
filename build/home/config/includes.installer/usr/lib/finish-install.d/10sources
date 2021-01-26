@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+# Reconfigure debian apt sources.list
+echo Reconfigure sources...
+in-target sh -c "cp -f /etc/apt/sources.list.debian /etc/apt/sources.list"
+in-target sh -c "rm -f /etc/apt/sources.list.debian"

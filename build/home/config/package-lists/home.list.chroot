@@ -1,0 +1,158 @@
+# Additional tools
+apparmor
+autoconf
+automake
+bleachbit
+brasero
+cheese
+colord
+eject
+figlet
+fish
+htop
+locate
+menu
+pigz
+seabios
+onboard
+unzip
+whois
+zip
+
+# Bluetooth
+bluetooth
+bluez
+bluez-firmware
+
+# Build
+build-essential
+
+# Clients
+thunderbird
+
+# Daemon
+avahi-daemon
+notification-daemon
+
+# Drivers
+gstreamer1.0-gl
+gstreamer1.0-gtk3
+gstreamer1.0-libav
+gstreamer1.0-vaapi
+gstreamer1.0-pulseaudio
+gobi-loader
+i965-va-driver
+mesa-vdpau-drivers
+mesa-vulkan-drivers
+
+# Extenstions
+caja-extensions-common
+caja-open-terminal
+
+# Filesystem tools
+dosfstools
+fdisk
+hdparm
+ntfs-3g
+
+# Games
+xboard
+fairymax
+
+# Fonts
+fonts-cantarell
+fonts-dejavu
+fonts-open-sans
+fonts-roboto
+
+# Image tools
+gimp
+ffmpegthumbnailer
+inkscape
+
+# Live tools
+live-tools
+
+# Network tools
+iw
+net-tools
+network-manager-gnome
+modemmanager
+wireless-tools
+wpasupplicant
+
+# Mate tools
+atril
+engrampa
+eom
+pluma
+mate-applets
+mate-calc
+mate-media
+mate-power-manager
+mate-screensaver
+mate-system-monitor 
+mate-utils
+mate-indicator-applet
+mate-menu
+mate-tweak
+mate-netbook
+
+# Office
+libreoffice
+
+# Printer drivers
+hplip
+printer-driver-all
+printer-driver-brlaser
+printer-driver-c2050
+printer-driver-c2esp
+printer-driver-cjet
+printer-driver-dymo
+printer-driver-escpr
+printer-driver-foo2zjs
+printer-driver-fujixerox
+printer-driver-gutenprint
+printer-driver-hpcups
+printer-driver-hpijs
+printer-driver-m2300w
+printer-driver-min12xxw
+printer-driver-pnm2ppa
+printer-driver-postscript-hp
+printer-driver-ptouch
+printer-driver-pxljr
+printer-driver-sag-gdi
+printer-driver-splix
+
+# Power management tools
+powermgmt-base
+powertop
+
+# System tools
+gdebi
+gnome-system-tools
+gparted
+lsb-release
+rtkit
+sudo
+synaptic
+system-config-printer
+user-setup
+
+# Themes
+gtk2-engines
+
+# Utilities
+pciutils
+usbmuxd
+usbutils
+
+# Video tools
+pulseaudio
+mpv
+vlc
+
+# Xserver
+xserver-xorg-legacy
+xserver-xorg-video-intel
+xserver-xorg-video-qxl 

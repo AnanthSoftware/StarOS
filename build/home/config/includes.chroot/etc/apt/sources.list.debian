@@ -1,0 +1,2 @@
+# Star OS 0.6 based on debian 10 (buster)
+deb http://deb.debian.org/debian buster main contrib non-free
