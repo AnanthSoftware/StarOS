@@ -1,0 +1,9 @@
+PRETTY_NAME="Star GNU/Linux 1.0 Pro"
+NAME="Star GNU/Linux"
+ID=star
+ID_LIKE=debian
+VERSION="1.0 Pro"
+VERSION_ID="1.0 Pro"
+HOME_URL="https://staros.in"
+SUPPORT_URL="https://staros.in/support"
+BUG_REPORT_URL="https://staros.in/bugs"

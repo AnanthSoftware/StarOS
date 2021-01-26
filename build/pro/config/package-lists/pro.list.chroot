@@ -1,0 +1,112 @@
+# Additional tools
+autoconf
+bleachbit
+brasero
+cheese
+curl
+figlet
+fish
+git
+htop
+kazam
+locate
+lvm2
+mtools
+parallel
+whois
+
+# Bluetooth
+bluez
+bluez-firmware
+
+# Clients
+transmission
+thunderbird
+remmina
+uget
+
+# Database tools
+mariadb-client
+mariadb-server
+sqlitebrowser
+
+# Drivers
+gobi-loader
+mesa-vdpau-drivers
+mesa-vulkan-drivers
+
+# Extenstions
+caja-extensions-common
+caja-open-terminal
+caja-sendto
+caja-share
+webext-ublock-origin
+
+# Filesystem tools
+btrfs-progs
+dosfstools
+hfsutils
+jfsutils
+reiser4progs
+reiserfsprogs
+xfsprogs
+xfsdump
+
+# Games
+xboard
+
+# Fonts
+fonts-cantarell
+fonts-open-sans
+fonts-roboto
+
+# IDE tools
+geany
+
+# Image tools
+inkscape
+
+# Network tools
+connect-proxy
+ethtool
+net-tools
+network-manager-openvpn
+network-manager-ssh
+nmap
+traceroute
+
+# Mate tools
+mate-menu
+mate-tweak
+mate-netbook
+
+# Package management tools
+flatpak
+snapd
+
+# Programming
+clang
+nodejs
+php
+
+# System tools
+gnome-system-tools
+gparted
+gdebi
+gufw
+locales-all
+onboard
+packagekit
+system-config-printer
+
+# Utilities
+pciutils
+usbutils
+
+# Video tools
+ffmpeg
+mpv
+vlc
+
+# Virtual machine
+virt-manager

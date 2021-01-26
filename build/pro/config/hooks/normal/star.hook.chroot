@@ -1,0 +1,105 @@
+#!/bin/sh
+
+set -e
+
+# Add flatpak repository
+echo 'Adding flatpak repository...'
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+echo 'Done.'
+
+# Remove intalled packages from standard.list
+echo 'Removing installed standard packages...'
+apt autoremove -y debian-faq doc-debian firmware-ath9k-htc firmware-netronome firmware-zd1211 fonts-droid-fallback gnome-accessibility-themes gnome-themes-extra imagemagick-6.q16 mate-icon-theme-faenza wamerican
+echo 'Done.'
+
+# Remove application shortcuts
+echo 'Removing application shortcuts...'
+rm -rf /usr/share/applications/code-url-handler.desktop
+rm -rf /usr/share/applications/debian-installer-launcher.desktop
+rm -rf /usr/share/applications/libreoffice-xsltfilter.desktop
+rm -rf /usr/share/applications/mate-color-select.desktop
+rm -rf /usr/share/applications/remmina-gnome.desktop
+rm -rf /usr/share/applications/xboard-tourney.desktop
+rm -rf /usr/share/applications/xboard-pgn-viewer.desktop
+rm -rf /usr/share/applications/xboard-fen-viewer.desktop
+rm -rf /usr/share/applications/xboard-config.desktop
+echo 'Done.'
+
+# Remove mate backgrounds
+echo 'Removing installed backgrounds...'
+rm -rf /usr/share/backgrounds/mate
+rm -rf /usr/share/backgrounds/cosmos
+echo 'Done.'
+
+# Remove mate icons
+echo 'Removing installed icons...'
+rm -rf /usr/share/icons/ContrastHigh
+rm -rf /usr/share/icons/ContrastHighLargePrintInverse
+rm -rf /usr/share/icons/HighContrast
+rm -rf /usr/share/icons/gnome
+rm -rf /usr/share/icons/mate
+rm -rf /usr/share/icons/mate-black
+rm -rf /usr/share/icons/menta
+echo 'Done.'
+
+# Remove mate themes
+echo 'Removing installed themes...'
+rm -rf /usr/share/themes/Adwaita-dark
+rm -rf /usr/share/themes/BlackMATE
+rm -rf /usr/share/themes/Blue-Submarine
+rm -rf /usr/share/themes/BlueMenta
+rm -rf /usr/share/themes/Clearlooks
+rm -rf /usr/share/themes/ClearlooksRe
+rm -rf /usr/share/themes/ContrastHigh
+rm -rf /usr/share/themes/Crux
+rm -rf /usr/share/themes/Dopple
+rm -rf /usr/share/themes/Dopple-Left
+rm -rf /usr/share/themes/DustBlue
+rm -rf /usr/share/themes/eOS
+rm -rf /usr/share/themes/GreenLaguna
+rm -rf /usr/share/themes/Green-Submarine
+rm -rf /usr/share/themes/HighContrast
+rm -rf /usr/share/themes/HighContrastInverse
+rm -rf /usr/share/themes/Industrial
+rm -rf /usr/share/themes/Menta
+rm -rf /usr/share/themes/Mist
+rm -rf /usr/share/themes/Raleigh
+rm -rf /usr/share/themes/Redmond
+rm -rf /usr/share/themes/Shiny
+rm -rf /usr/share/themes/Spidey
+rm -rf /usr/share/themes/Spidey-Left
+rm -rf /usr/share/themes/Splint
+rm -rf /usr/share/themes/Splint-Left
+rm -rf /usr/share/themes/ThinIce
+rm -rf /usr/share/themes/TraditionalGreen
+rm -rf /usr/share/themes/TraditionalOk
+rm -rf /usr/share/themes/WinMe
+echo 'Done.'
+
+# Remove plymouth themes
+echo 'Removing installed plymouth themes...'
+rm -rf /usr/share/plymouth/themes/fade-in
+rm -rf /usr/share/plymouth/themes/glow
+rm -rf /usr/share/plymouth/themes/joy
+rm -rf /usr/share/plymouth/themes/lines
+rm -rf /usr/share/plymouth/themes/moonlight
+rm -rf /usr/share/plymouth/themes/script
+rm -rf /usr/share/plymouth/themes/softwaves
+rm -rf /usr/share/plymouth/themes/solar
+rm -rf /usr/share/plymouth/themes/spacefun
+rm -rf /usr/share/plymouth/themes/spinfinity
+rm -rf /usr/share/plymouth/themes/spinner
+rm -rf /usr/share/plymouth/themes/tribar
+echo 'Done.'
+
+# Remove mate screensavers
+echo 'Removing installed screensavers...'
+rm -rf /usr/share/applications/screensavers/cosmos-slideshow.desktop
+rm -rf /usr/share/applications/screensavers/gnomelogo-floaters.desktop
+rm -rf /usr/share/applications/screensavers/footlogo-floaters.desktop
+echo 'Done.'
+
+# Set star plymouth theme as default
+echo 'Setting up star plymouth theme as default...'
+plymouth-set-default-theme -R star
+echo 'Done.'
